@@ -1,0 +1,49 @@
+name: snapfilter
+description: A modern Snapchat-style camera filter app with AR features.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Camera preview & capture
+  camera: ^0.10.5+9
+
+  # Google ML Kit face detection for AR filters
+  google_mlkit_face_detection: ^0.11.0
+
+  # Image processing (brightness/contrast/blur on captured image)
+  image: ^4.2.0
+
+  # File paths & storage
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # Save photo to gallery
+  gal: ^2.3.0
+
+  # Share to Instagram / WhatsApp / system sheet
+  share_plus: ^9.0.0
+
+  # Runtime permissions (camera, storage, microphone)
+  permission_handler: ^11.3.1
+
+  # State management
+  provider: ^6.1.2
+
+  # UI
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/stickers/
